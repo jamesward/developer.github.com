@@ -38,7 +38,7 @@ Name | Description
 Name | Type | Description
 -----|------|--------------
 `state`|`string` | Either `open`, `closed`, or `all` to filter by state. Default: `open`
-`head`|`string` | Filter pulls by head user and branch name in the format of `user:ref-name`. Example: `github:new-script-format`.
+`head`|`string` | Filter pulls by head user or org, repo, and branch name in the format of `userOrOrg/repo:ref-name`. Example: `github/foo:new-script-format`. You can leave out the branch or the repo and branch.
 `base`|`string` | Filter pulls by base branch name. Example: `gh-pages`.
 `sort`|`string`|  What to sort results by. Can be either `created`, `updated`, `popularity` (comment count) or `long-running` (age, filtering by pulls updated in the last month). Default: `created`
 `direction`|`string`| The direction of the sort. Can be either `asc` or `desc`. Default: `desc` when sort is `created` or sort is not specified, otherwise `asc`.
